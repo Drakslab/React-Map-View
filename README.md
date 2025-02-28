@@ -26,7 +26,7 @@ Follow these steps to get the project up and running on your local machine.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/react-map-app.git
+git clone https://github.com/draklabs/react-map-app.git
 cd react-map-app
 
 2. Set up the backend (Flask)
@@ -55,8 +55,6 @@ The Flask server will run on http://localhost:5000.
 
     Navigate to the frontend directory:
 
-cd frontend
-
     Install the dependencies:
 
 npm install
@@ -65,7 +63,7 @@ npm install
 
 npm run dev
 
-The React app will run on http://localhost:3000.
+The React app will run on http://localhost:5173.
 4. Build and deploy
 
 To create a production build of the React app, run:
