@@ -57,9 +57,7 @@ venv\Scripts\activate  # On Windows
 
     Install Flask:
 
-pip install Flask
-
-    Create the Flask app in backend/app.py and run the server:
+pip install -r requirements.txt
 
 python app.py
 
@@ -97,3 +95,4 @@ Dependencies
         React-Bootstrap (for UI components)
     Backend:
         Flask (for serving the mock API)
+        Flask-CORS (for handling cross-origin resource sharing)
