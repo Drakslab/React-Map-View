@@ -21,8 +21,7 @@ react-map-app/
 │    ├── Components/    # React components
          └── MapView.jsx # Map View Component
          └── mapview.css # Map View Styles
-│    ├── App.jsx         # React app entry point
-│    └── mapview.js     # Map component with pin functionality
+│    └── App.jsx         # React app entry point
 │
 ├── package.json           # React app configuration
 └── README.md              # Project documentation
