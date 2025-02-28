@@ -11,7 +11,20 @@ This project is a simple web application that displays an interactive map with p
 
 ## Project Structure
 
-my-project/ │ ├── backend/ # Flask backend │ └── app.py # Flask app │ ├── frontend/ # React frontend │ └── src/ │ └── components/ │ └── App.js # React app entry point │ └── mapview.js # Component for map │ ├── package.json # React app configuration └── README.md # Project documentation
+react-map-app/
+│
+├── backend/               # Flask backend
+│   └── app.py             # Flask app (API for managing pins)
+│
+├── src/
+│    ├── Components/    # React components
+         └── MapView.jsx # Map View Component
+         └── mapview.css # Map View Styles
+│    ├── App.jsx         # React app entry point
+│    └── mapview.js     # Map component with pin functionality
+│
+├── package.json           # React app configuration
+└── README.md              # Project documentation
 
 
 ## Getting Started
