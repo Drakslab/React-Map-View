@@ -11,6 +11,7 @@ This project is a simple web application that displays an interactive map with p
 
 ## Project Structure
 
+```
 react-map-app/
 │
 ├── backend/               # Flask backend
@@ -25,7 +26,7 @@ react-map-app/
 │
 ├── package.json           # React app configuration
 └── README.md              # Project documentation
-
+```
 
 ## Getting Started
 
