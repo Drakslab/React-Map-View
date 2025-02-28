@@ -2,18 +2,18 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-# Lista simulada de pins
+# Simulated pin list
 pins = [
     { 'id': 1, 'lat': -33.4489, 'lng': -70.6693, 'name': 'Santiago, Chile' },
     { 'id': 2, 'lat': 10.4806, 'lng': -66.9036, 'name': 'Caracas, Venezuela' }
 ]
 
-# Ruta para obtener los pins
+# PATH to obtain pins
 @app.route('/api/pins', methods=['GET'])
 def get_pins():
     return jsonify(pins)
 
-# Ruta para agregar un nuevo pin
+# PATH to add new pins
 @app.route('/api/pins', methods=['POST'])
 def add_pin():
     new_pin = request.json

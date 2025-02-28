@@ -38,7 +38,7 @@ const MapView = () => {
   const [pins, setPins] = useState([]);
   const [selectedPin, setSelectedPin] = useState(null);
 
-  // Cargar los pins desde el backend
+  // Load pins from backend
   useEffect(() => {
     const fetchPins = async () => {
       try {
@@ -52,11 +52,11 @@ const MapView = () => {
     fetchPins();
   }, []);
 
-  // Agregar un nuevo pin al backend
+  // Add a new pin
   const handleAddPin = async (newPin) => {
     try {
       const response = await axios.post('http://localhost:5000/api/pins', newPin);
-      setPins([...pins, response.data]); // Actualizar el estado con el nuevo pin
+      setPins([...pins, response.data]); // Actualize state
     } catch (error) {
       console.error('Error al agregar el pin:', error);
     }
